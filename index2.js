@@ -40,15 +40,15 @@ function menu() {
                 metodoPago()
                 break
             case "3":
-                alert("Se han eliminado todos los productos del carrito")
+                alert()
                 totalProductos = multiplicacion(totalProductos, 0);
-                menu()
+                return totalProductos
             default: 
             mostrarTotal()
                 break;
             
         } 
-    }while (opcion !== "ESC" || opcion < 3) 
+    }while (opcion !== "ESC" || opcion <= 3) 
 }
 
 function agregarProducto() {
